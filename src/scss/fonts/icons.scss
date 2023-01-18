@@ -1,5 +1,5 @@
 %ic {
-	font-family: "icons";
+	font-family: 'icons';
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -8,9 +8,40 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-[class*="_icon-"] {
+[class*='_icon-'] {
 	&:before {
 		@extend %ic;
 		display: block;
 	}
+}
+
+._icon-facebook:before {
+	content: '\e901';
+}
+._icon-insta:before {
+	content: '\e903';
+}
+._icon-mainPhone:before {
+	content: '\e904';
+}
+._icon-mouse:before {
+	content: '\e905';
+}
+._icon-phone:before {
+	content: '\e906';
+}
+._icon-telegram:before {
+	content: '\e907';
+}
+._icon-whatsup:before {
+	content: '\e908';
+}
+._icon-Youtube:before {
+	content: '\e909';
+}
+._icon-tick:before {
+	content: '\e900';
+}
+._icon-arrow:before {
+	content: '\e902';
 }
