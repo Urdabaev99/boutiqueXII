@@ -39,6 +39,10 @@ textarea {
 	font-family: $fontFamily;
 	font-size: inherit;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
 button {
 	cursor: pointer;
 	color: inherit;

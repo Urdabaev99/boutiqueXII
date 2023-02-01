@@ -7,7 +7,7 @@
 	// .phone_number
 
 	&_number {
-    font-weight: 500;
+		font-weight: 500;
 	}
 
 	// .phone_numer
@@ -25,10 +25,23 @@
 
 	&_show {
 		color: $gold;
-    @media (any-hover: hover){
-      &:hover{
-        text-decoration: underline;
-      }
-    }
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+//========================================================================================================================================================
+
+._title {
+	font-size: rem(48);
+	font-weight: 500;
+	text-transform: uppercase;
+	@media (max-width: $xl) {
+		font-size: rem(36);
+	}
+	@media (max-width: $mobile) {
+		font-size: rem(28);
 	}
 }
