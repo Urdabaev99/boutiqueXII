@@ -37,6 +37,7 @@ const paths = {
   build: path.resolve(builFolder),
 };
 const config = {
+<<<<<<< HEAD
   mode: "development",
   devtool: "inline-source-map",
   optimization: {
@@ -56,6 +57,29 @@ const config = {
     port: "auto",
     hot: true,
     host: "local-ip", // localhost
+=======
+	mode: "development",
+	devtool: 'inline-source-map',
+	optimization: {
+		minimize: false
+	},
+	entry: [
+		`${paths.src}/js/app.js`
+	],
+	output: {
+		path: `${paths.build}`,
+		filename: 'js/app.min.js',
+		publicPath: '/'
+	},
+	devServer: {
+		historyApiFallback: true,
+		static: paths.build,
+		open: true,
+		compress: true,
+		port: 'auto',
+		hot: true,
+		host: 'local-ip', // localhost
+>>>>>>> f77d99248ff146e98ff38e6dcba544d1ae49bf78
 
     // Розкоментувати на слабкому ПК
     // (в режимі розробника папка результатом (dist) буде створюватися на диску)

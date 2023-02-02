@@ -1,12 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
+	@@include('html/_head.htm',{ "title":"HomePage" })
 	<body>
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
+				<section class="page__main-block main-block">
+					<div class="main-block__box">
+						<div class="main-block__media">
+							<div class="main-block__building">
+								<img src="@img/main-block/building.png" alt="building" />
+							</div>
+						</div>
+						<div class="main-block__body">
+							<h1 class="main-block__title">BOUTIQUE XII</h1>
+							<button type="button" class="main-block__btn _btn">
+								LEARN MORE
+							</button>
+						</div>
+						<div class="main-block__leafs">
+							<img src="@img/main-block/leafs.png" alt="leafs" />
+						</div>
+						<div class="main-block__leafs-small">
+							<img src="@img/smallLeafs.png" alt="leafsSmall" />
+						</div>
+					</div>
+				</section>
+				<section class="page__about about">
+					<div class="about__box">
+						<div class="about__info">
+							<h2 class="about__title _title">ABOUT BOUTIQUE XII</h2>
+							<div class="about__text">
+								<p>
+									The 12-storey state-of-the-art residential building featuring
+									a selection of
+									<span>
+										a selection of studio, one, two, three and four-bedroom
+										apartments a selection of</span
+									>
+									for next-generation functional living and premium amenities is
+									bound to be a desirable address.
+								</p>
+								<p>
+									The creators of the project have displayed a contemporary look
+									of the building in a casual style, creating a modern and at
+									the same time calm environment.
+								</p>
+							</div>
+						</div>
+						<div class="about__g"></div>
+						<div data-da=".about__info, 991.98, 1" class="about__media">
+							<div class="about__image-ibg">
+								<img src="@img/about/1.png" alt="img" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__key-features key-features">
+					<div class="key-features__box">
+						<div class="key-features__body">
+							<h2 class="key-features__title _title">key features</h2>
+							<div class="key-features__text">
+								<p>
+									Vertical living is refined to ensure residents are taken care
+									of with amenities carefully thought out in Boutique XII.
+								</p>
+							</div>
+							<div class="key-features__items">
+								<div class="key-features__item item-key-features">
+									<div class="item-key-features__icon">
+										<img src="@img/key-features/swimming-pool.svg" alt="svg" />
+									</div>
+									<div class="item-key-features__desc">
+										Pool with a dedicated children play area
+									</div>
+								</div>
+								<div class="key-features__item item-key-features">
+									<div class="item-key-features__icon">
+										<img src="@img/key-features/gym.svg" alt="svg" />
+									</div>
+									<div class="item-key-features__desc">
+										State-of-the-art gym facility
+									</div>
+								</div>
+								<div class="key-features__item item-key-features">
+									<div class="item-key-features__icon">
+										<img src="@img/key-features/park.svg" alt="svg" />
+									</div>
+									<div class="item-key-features__desc">
+										Courtyard for family pastime and relaxation
+									</div>
+								</div>
+								<div class="key-features__item item-key-features">
+									<div class="item-key-features__icon">
+										<img
+											src="@img/key-features/online-shopping.svg"
+											alt="svg"
+										/>
+									</div>
+									<div class="item-key-features__desc">
+										Conveniently located retail on the ground level
+									</div>
+								</div>
+								<div class="key-features__item item-key-features">
+									<div class="item-key-features__icon">
+										<img src="@img/key-features/house-plan.svg" alt="svg" />
+									</div>
+									<div class="item-key-features__desc">
+										Efficient and functional layouts
+									</div>
+								</div>
+								<div class="key-features__item item-key-features">
+									<div class="item-key-features__icon">
+										<img src="@img/key-features/car-parking.svg" alt="svg" />
+									</div>
+									<div class="item-key-features__desc">
+										3-level underground parking
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="key-features__stairs">
+							<img src="@img/woods-shadeles.png" alt="stairs" />
+						</div>
+					</div>
+				</section>
+				<div class="page__just-img-ibg">
+					<img src="@img/justImg.png" alt="justImg" />
+				</div>
+				<section class="page__location location">
+					<div class="location__box">
+						<h2 class="location__title _title">LOCATION</h2>
+						<div class="location__tips">
+							<div
+								class="location__tip tip-location tip-location_1 _active-tippy"
+							>
+								<div class="tip-location__img-ibg">
+									<img src="@img/location/1.jpg" alt="img" />
+								</div>
+								<div class="tip-location__body">
+									<div class="tip-location__title">
+										<span>12</span> <br />
+										mins drive to
+									</div>
+									<div class="tip-location__text">Downtown Dubai</div>
+								</div>
+							</div>
+						</div>
+						<div class="location__marker">
+							<p>XII</p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="location__map-ibg">
+						<img src="@img/location/map.png" alt="map" />
+					</div>
+				</section>
+				<section class="page__get-info get-info">
+					<div class="get-info__box">
+						<div class="get-info__body">
+							<h2 class="get-info__title _title">
+								Get MORE DETAILED INFORMATION ABOUT PROJECT
+							</h2>
+							<ul class="get-info__list">
+								<li class="get-info__li _icon-tick">Lifestyle</li>
+								<li class="get-info__li _icon-tick">Masterplan</li>
+								<li class="get-info__li _icon-tick">
+									Information about stores
+								</li>
+							</ul>
+							<form action="#" class="get-info__form form">
+								<div class="form__items">
+									<div class="form__item">
+										<input
+											autocomplete="off"
+											type="text"
+											name="form[]"
+											data-error=" "
+											data-required
+											data-validate
+											placeholder="Your name"
+											class="form__input form__input_name"
+										/>
+									</div>
+									<div class="form__item">
+										<input
+											autocomplete="off"
+											type="text"
+											name="form[]"
+											data-error=" "
+											data-required
+											data-validate="email"
+											placeholder="Your email"
+											class="form__input form__input_email"
+										/>
+									</div>
+									<div class="form__item">
+										<input
+											autocomplete="off"
+											type="number"
+											name="form[]"
+											data-error=" "
+											data-required
+											data-number
+											data-validate="email"
+											placeholder="Your number"
+											class="form__input form__input_number"
+										/>
+									</div>
+								</div>
+								<button type="submit" class="form__btn">
+									<span>download brochure</span>
+								</button>
+							</form>
+						</div>
+						<div class="get-info__media">
+							<div class="get-info__img">
+								<img src="@img/get-info/1.png" alt="brochure" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__gallery gallery">
+					<div class="gallery__box">
+						<h2 class="gallery__title _title">gallery</h2>
+						<div class="gallery__body">
+							<div class="gallery__item-ibg">
+								<img src="@img/gallery/1.png" alt="img" />
+							</div>
+							<div class="gallery__item-ibg">
+								<img src="@img/gallery/2.png" alt="img" />
+							</div>
+							<div class="gallery__item-ibg">
+								<img src="@img/gallery/3.png" alt="img" />
+							</div>
+							<div class="gallery__item-ibg">
+								<img src="@img/gallery/4.png" alt="img" />
+							</div>
+							<div class="gallery__item-ibg">
+								<img src="@img/gallery/5.1.png" alt="img" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="page__floor-plans floor-plans">
+					<div class="floor-plans__box">
+						<div class="floor-plans__nav nav-floor-plans"></div>
+						<div class="floor-plans__schema schema-floor-plans">
+							<div class="schema-floor-plans__slider swiper">
+								<div class="schema-floor-plans__wrapper swiper-wrapper">
+									<div class="schema-floor-plans__slide swiper-slide slide-floor-schema">
+										<div data-swiper-parallax-y="-400" data-swiper-parallax-opacity="0"  data-swiper-parallax-x="250" class="slide-floor-schema__body">
+											<div  class="slide-floor-schema__title _title">studio</div>
+											<div class="slide-floor-schema__items">
+												<div class="slide-floor-schema__item">Bedrooms: <span>1</span></div>
+												<div class="slide-floor-schema__item">Total area: <span>325 SQ FT</span></div>
+											</div>
+											<div class="slide-floor-schema__sub-title">Prices, floor plans & availabilities</div>
+											<button type="button" class="slide-floor-schema__btn _btn">Download pdf</button>
+										</div>
+										<div data-swiper-parallax-opacity="0"  data-swiper-parallax-duration="350"   class="slide-floor-schema__image-ibg"><img src="@img/tabs/1.png" alt="img"></div>
+									</div>
+									<div class="schema-floor-plans__slide swiper-slide slide-floor-schema">
+										<div data-swiper-parallax-y="-400" data-swiper-parallax-opacity="0"  data-swiper-parallax-x="250" class="slide-floor-schema__body">
+											<div  class="slide-floor-schema__title _title">1 bedroom</div>
+											<div class="slide-floor-schema__items">
+												<div class="slide-floor-schema__item">Bedrooms: <span>1</span></div>
+												<div class="slide-floor-schema__item">Total area: <span>325 SQ FT</span></div>
+											</div>
+											<div class="slide-floor-schema__sub-title">Prices, floor plans & availabilities</div>
+											<button type="button" class="slide-floor-schema__btn _btn">Download pdf</button>
+										</div>
+										<div data-swiper-parallax-opacity="0"  data-swiper-parallax-duration="350"  class="slide-floor-schema__image-ibg"><img src="@img/tabs/1.png" alt="img"></div>
+									</div>
+									<div class="schema-floor-plans__slide swiper-slide slide-floor-schema">
+										<div data-swiper-parallax-y="-400" data-swiper-parallax-opacity="0"  data-swiper-parallax-x="250" class="slide-floor-schema__body">
+											<div  class="slide-floor-schema__title _title">2 bedroom</div>
+											<div class="slide-floor-schema__items">
+												<div class="slide-floor-schema__item">Bedrooms: <span>1</span></div>
+												<div class="slide-floor-schema__item">Total area: <span>325 SQ FT</span></div>
+											</div>
+											<div class="slide-floor-schema__sub-title">Prices, floor plans & availabilities</div>
+											<button type="button" class="slide-floor-schema__btn _btn">Download pdf</button>
+										</div>
+										<div data-swiper-parallax-opacity="0"  data-swiper-parallax-duration="350"  class="slide-floor-schema__image-ibg"><img src="@img/tabs/1.png" alt="img"></div>
+									</div>
+									<div class="schema-floor-plans__slide swiper-slide slide-floor-schema">
+										<div data-swiper-parallax-y="-400" data-swiper-parallax-opacity="0"  data-swiper-parallax-x="250" class="slide-floor-schema__body">
+											<div  class="slide-floor-schema__title _title">3 bedroom</div>
+											<div class="slide-floor-schema__items">
+												<div class="slide-floor-schema__item">Bedrooms: <span>1</span></div>
+												<div class="slide-floor-schema__item">Total area: <span>325 SQ FT</span></div>
+											</div>
+											<div class="slide-floor-schema__sub-title">Prices, floor plans & availabilities</div>
+											<button type="button" class="slide-floor-schema__btn _btn">Download pdf</button>
+										</div>
+										<div data-swiper-parallax-opacity="0"  data-swiper-parallax-duration="350"  class="slide-floor-schema__image-ibg"><img src="@img/tabs/1.png" alt="img"></div>
+									</div>
+									<div class="schema-floor-plans__slide swiper-slide slide-floor-schema">
+										<div data-swiper-parallax-y="-400" data-swiper-parallax-opacity="0"  data-swiper-parallax-x="250" class="slide-floor-schema__body">
+											<div  class="slide-floor-schema__title _title">4 bedroom</div>
+											<div class="slide-floor-schema__items">
+												<div class="slide-floor-schema__item">Bedrooms: <span>1</span></div>
+												<div class="slide-floor-schema__item">Total area: <span>325 SQ FT</span></div>
+											</div>
+											<div class="slide-floor-schema__sub-title">Prices, floor plans & availabilities</div>
+											<button type="button" class="slide-floor-schema__btn _btn">Download pdf</button>
+										</div>
+										<div data-swiper-parallax-opacity="0"  data-swiper-parallax-duration="350"  class="slide-floor-schema__image-ibg"><img src="@img/tabs/1.png" alt="img"></div>
+									</div>
+								</div>
+							</div>
+							<div class="schema-floor-plans__nav">
+								<div class="schema-floor-plans__prev _icon-arrow"></div>
+								<div class="schema-floor-plans__next _icon-arrow"></div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>

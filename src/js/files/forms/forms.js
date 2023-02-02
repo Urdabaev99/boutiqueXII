@@ -49,6 +49,9 @@ export function formFieldsInit(options = { viewPass: false, autoHeight: false })
 			if (targetElement.hasAttribute('data-validate')) {
 				formValidate.validateInput(targetElement);
 			}
+			if (targetElement.hasAttribute('data-number')) {
+				formValidate.validatePhoneNumber(targetElement);
+			}
 		}
 	});
 	// Якщо увімкнено, додаємо функціонал "Показати пароль"
@@ -165,6 +168,15 @@ export let formValidate = {
 				}
 			}
 		}, 0);
+	},
+	validatePhoneNumber(targetElement) {
+		if (!/^[0-9]+$/.test(targetElement.value) || targetElement.value.length < 12) {
+			this.addError(targetElement)
+			this.removeSuccess(targetElement)
+		} else {
+			this.addSuccess(targetElement)
+			this.removeError(targetElement)
+		}
 	},
 	emailTest(formRequiredItem) {
 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(formRequiredItem.value);
