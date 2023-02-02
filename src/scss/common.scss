@@ -45,3 +45,13 @@
 		font-size: rem(28);
 	}
 }
+
+._btn {
+	background: linear-gradient(270deg, #d3aa90 0%, #be8d71 100%);
+	background-position: 0 0;
+	transition: background-position 0.35s linear, color 0.3s linear;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
