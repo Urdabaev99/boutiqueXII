@@ -1,57 +1,84 @@
 // Заголовки, загальні БЕМ блоки та інше...
 .phone {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	flex-direction: column;
-	// .phone_number
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  // .phone_number
 
-	&_number {
-		font-weight: 500;
-	}
+  &_number {
+    font-weight: 500;
+  }
 
-	// .phone_numer
+  // .phone_numer
 
-	&_numer {
-	}
+  &_numer {
+  }
 
-	// .phone_xxxx
+  // .phone_xxxx
 
-	&_xxxx {
-		color: $gold;
-	}
+  &_xxxx {
+    color: $gold;
+  }
 
-	// .phone_show
+  // .phone_show
 
-	&_show {
-		color: $gold;
-		@media (any-hover: hover) {
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
+  &_show {
+    color: $gold;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 //========================================================================================================================================================
 
 ._title {
-	font-size: rem(48);
-	font-weight: 500;
-	text-transform: uppercase;
-	@media (max-width: $xl) {
-		font-size: rem(36);
-	}
-	@media (max-width: $mobile) {
-		font-size: rem(28);
-	}
+  font-size: rem(48);
+  font-weight: 500;
+  text-transform: uppercase;
+  @media (max-width: $xl) {
+    font-size: rem(36);
+  }
+  @media (max-width: $mobile) {
+    font-size: rem(28);
+  }
 }
 
 ._btn {
-	background: linear-gradient(270deg, #d3aa90 0%, #be8d71 100%);
-	background-position: 0 0;
-	transition: background-position 0.35s linear, color 0.3s linear;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-transform: uppercase;
+  background: linear-gradient(270deg, #d3aa90 0%, #be8d71 100%);
+  background-position: 0 0;
+  transition: background-position 0.35s linear, color 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+._btn-hover {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    background: linear-gradient(270deg, #ffffff 0%, #e2e2e2 100%),
+      linear-gradient(270deg, #d3aa90 0%, #be8d71 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      &::before {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
 }

@@ -12,7 +12,7 @@
 */
 
 // Увімкнути/вимкнути FLS (Full Logging System) (в роботі)
-window['FLS'] = true;
+window["FLS"] = true;
 
 // Підключення основного файлу стилів
 import "../scss/style.scss";
@@ -74,7 +74,7 @@ flsFunctions.menuInit();
 Документація: https://template.fls.guru/template-docs/funkcional-popup.html
 Сніппет (HTML): pl, pop
 */
-import './libs/popup.js'
+import "./libs/popup.js";
 
 /*
 Модуль паралаксу мишею
@@ -91,8 +91,8 @@ import * as flsForms from "./files/forms/forms.js";
 /* Документація: https://template.fls.guru/template-docs/rabota-s-formami.html */
 
 flsForms.formFieldsInit({
-	viewPass: false,
-	autoHeight: false
+  viewPass: false,
+  autoHeight: false,
 });
 
 /* Надсилання форми */
